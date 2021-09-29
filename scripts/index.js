@@ -6,6 +6,7 @@ const DOMHandler = (function () {
     const openMenu = document.querySelector('.feather-menu');
     const closeMenu = document.querySelector('.feather-x');
     const sidebar = document.querySelector('#sidebar');
+    const project = document.querySelector('#project');
 
     // bind events
     openMenu.addEventListener('click', switchMenuToX);
@@ -25,5 +26,6 @@ const DOMHandler = (function () {
 
     function toggleSidebar() {
         sidebar.classList.toggle('active');
+        project.classList.toggle('active');
     }
 })();
