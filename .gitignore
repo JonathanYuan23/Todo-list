@@ -1,2 +1,5 @@
 .prettierrc.json
-node_modules
+
+#feather icons
+node_modules/*
+!node_modules/feather-icons

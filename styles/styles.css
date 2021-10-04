@@ -1,3 +1,14 @@
+:root {
+    --c-white: rgb(255, 255, 255);
+    --c-red: rgb(219, 76, 63);
+    --c-purple: rgb(105, 47, 195);
+    --c-green: rgb(5, 133, 39);
+    --c-orange: rgb(244, 156, 24);
+    --c-blue: rgb(64, 115, 214);
+    --c-black-1: rgb(40, 40, 40);
+    --c-black-2: rgb(50, 50, 50);
+}
+
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     height: 100%;
@@ -12,7 +23,7 @@ body {
 header {
     align-items: center;
     background-color: rgb(60, 60, 60);
-    color: rgb(255, 255, 255);
+    color: var(--c-white);
     display: flex;
     height: 45px;
     padding: 0 45px;
@@ -76,7 +87,7 @@ li {
 }
 
 .label-wrapper {
-    margin-right: 7px;
+    margin-right: 10px;
     margin-bottom: 7px;
 }
 
@@ -91,7 +102,7 @@ li {
 }
 
 input[id='search'] {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--c-white);
     border: none;
     border-radius: 3px;
     box-sizing: border-box;
@@ -144,13 +155,6 @@ ul::-webkit-scrollbar-thumb {
 }
 
 #tasks {
-    --c-red: rgb(219, 76, 63);
-    --c-purple: rgb(105, 47, 195);
-    --c-green: rgb(5, 133, 39);
-    --c-orange: rgb(244, 156, 24);
-    --c-blue: rgb(64, 115, 214);
-    --c-black-1: rgb(40, 40, 40);
-    --c-black-2: rgb(50, 50, 50);
     box-sizing: border-box;
     padding: 40px 35px 0;
     height: inherit;
@@ -275,4 +279,13 @@ ul::-webkit-scrollbar-thumb {
 
 #add-task h2 {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        padding: 0 15px;
+    }
+    #project.active {
+        margin-left: 0;
+    }
 }
