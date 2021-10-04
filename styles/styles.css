@@ -285,6 +285,7 @@ ul::-webkit-scrollbar-thumb {
     header {
         padding: 0 15px;
     }
+    
     #project.active {
         margin-left: 0;
     }
