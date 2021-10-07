@@ -1,3 +1,4 @@
+/* rem stylesheet */
 :root {
     --c-white: rgb(255, 255, 255);
     --c-red: rgb(219, 76, 63);
@@ -8,6 +9,7 @@
     --c-black-1: rgb(40, 40, 40);
     --c-black-2: rgb(50, 50, 50);
 
+    /* 1 rem = 10px */
     font-size: 62.5%;
 }
 
@@ -28,7 +30,7 @@ header {
     color: var(--c-white);
     display: flex;
     height: 4.5rem;
-    padding: 0 4.5rem;
+    padding-left: 4.5rem;
 }
 
 ul {
@@ -286,7 +288,7 @@ ul::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 75rem) {
     header {
-        padding: 0 1.5rem;
+        padding-left: 1.5rem;
     }
     
     #project.active {
