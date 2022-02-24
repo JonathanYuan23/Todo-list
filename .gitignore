@@ -1,4 +1,5 @@
 .prettierrc.json
+.vscode
 
 #feather icons
 #node_modules/*

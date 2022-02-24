@@ -13,14 +13,14 @@ const DOMHandler = (function () {
     closeMenu.addEventListener('click', switchXToMenu);
 
     function switchMenuToX(e) {
-        openMenu.style.display = 'none';
-        closeMenu.style.display = 'block';
+        openMenu.classList.toggle('toggle-menu');
+        closeMenu.classList.toggle('toggle-menu');
         toggleSidebar();
     }
 
     function switchXToMenu(e) {
-        openMenu.style.display = 'block';
-        closeMenu.style.display = 'none';
+        openMenu.classList.toggle('toggle-menu');
+        closeMenu.classList.toggle('toggle-menu');
         toggleSidebar();
     }
 
